@@ -11,9 +11,11 @@ public class DemoAppApplication {
 
 	public static void main(String[] args) {
 
-		ConfigurableApplicationContext applicationContext=SpringApplication.run(DemoAppApplication.class, args);
-		SpringComponent springComponent = applicationContext.getBean(SpringComponent.class);
-		System.out.println(springComponent.getMessage());
+		SpringApplication.run(DemoAppApplication.class, args);
+
+//		ConfigurableApplicationContext applicationContext=SpringApplication.run(DemoAppApplication.class, args);
+//		SpringComponent springComponent = applicationContext.getBean(SpringComponent.class);
+//		System.out.println(springComponent.getMessage());
 	}
 
 }
